@@ -1,0 +1,84 @@
+.sign-in{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(to bottom left,black,transparent),url(netflixbackground.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    form {
+        height: 80vh;
+        width: 450px;
+        background: rgba(52,52,52,0.05);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        backdrop-filter: blur(4px);
+        color: #ffff;
+        border: 1px #b6b6b6 solid;
+
+        .signintopleft{
+            font-size: 1.8rem;
+            font-weight: 700;
+            height: 40px;
+            width: 81%;
+            position: relative;
+            bottom: 8px;
+
+        }
+
+        input {
+            height: 40px;
+            color: #b6b6b6;
+            width: 80%;
+            font-size: 1rem;
+        }
+    
+        input[type='submit'] {
+            border: none;
+            width: 81%;
+            background-color: rgb(214,9,9);
+            color: #ffff;
+            border-radius: 5px;
+        }
+    
+        input[type='submit']:hover {
+            background-color: rgb(169, 0, 0);
+        }
+        
+        input[type='text'] , input[type='password'] {
+            background: transparent;
+            border: 1px rgb(120,115,115) solid;
+            border-radius: 5px;
+        }
+    
+        ::placeholder {
+            color: #b6b6b6;
+            font-size: 1rem;
+        }
+    
+        input:focus {
+            outline: none;
+        }
+    
+        .check {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            right: 100px;
+            gap: 10px;
+            
+            input{
+                width: unset;
+            }
+        }
+    }   
+}
